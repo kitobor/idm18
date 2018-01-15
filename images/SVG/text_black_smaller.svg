@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4.09mm" height="6.74mm" viewBox="0 0 11.58 19.11">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 15px;
+        font-family: NexaBold, Nexa Bold;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #231f20;
+      }
+    </style>
+  </defs>
+  <title>text_black_smaller</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <text class="cls-1" transform="translate(0.34 12.75)">A</text>
+        <polygon class="cls-2" points="5.75 19.11 9.26 14.78 2.24 14.78 5.75 19.11"/>
+      </g>
+    </g>
+  </g>
+</svg>

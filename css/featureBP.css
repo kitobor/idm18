@@ -1,0 +1,145 @@
+/* ----------- BREAKPOINTS FOR FEATURE PAGES ----------- */
+.grid {
+	margin:0;
+	display: grid;
+	grid-template-rows: auto;
+	grid-gap: 1em;
+}
+
+/* ----------- Phone P ----------- */
+@media screen and (max-width:400px) {    
+	.grid {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			"hd hd hd"
+			"sA sA sA"
+			"as as as"
+			"mn mn mn"
+			"ft ft ft";
+	}
+	
+	header, footer {
+	  padding:1em;
+	  border-radius: 0px;
+	}
+	
+	h1 {
+	  font-size: 1em;
+	}
+}
+
+/* ----------- Phone L ----------- */
+@media screen and (min-width:401px) {    
+	.grid {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			"hd hd hd"
+			"sA sA sA"
+			"as as as"
+			"mn mn mn"
+			"ft ft ft";
+	}
+		
+	header, footer {
+	  border-radius: 0px;
+	  padding:1em;
+	}
+}
+
+/* ----------- Tablet Portrait ----------- */
+@media screen and (min-width:600px) {    
+	.grid {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			"hd hd hd"
+			"sA sA sA"
+			"as as as"
+			"mn mn mn"
+			"ft ft ft";
+	}
+		
+	header, footer {
+	  border-radius: 0px;
+	  padding:1em;
+	}
+	
+	h1 {
+	  font-size: 2em;
+	}
+}
+
+/* ----------- Tablet Landscape ----------- */
+@media screen and (min-width:900px) {	  
+	.grid {
+		grid-template-columns: repeat(7, 1fr);
+		grid-template-areas:
+			"hd hd hd hd hd hd hd"
+			". sA sA sA sA sA ."
+			". mn mn mn as as ."
+			". mn mn mn . . ."
+			". ft ft ft . . .";
+	}
+	
+	header, footer {
+	  padding: 1em;
+	}
+	
+	header {
+	  padding-left: 14.3vw;
+	}
+	
+	footer {
+	  border-radius: 0 0 10px 10px;	
+	}
+}
+
+/* ----------- Desktops and laptops ----------- */
+@media only screen  and (min-width : 1200px) {
+	.grid {
+		grid-template-columns: repeat(7, 1fr);
+		grid-template-areas:
+			"hd hd hd hd hd hd hd"
+			". sA sA sA sA sA ."
+			". mn mn mn as as ."
+			". mn mn mn . . ."
+			". ft ft ft . . .";
+	}
+	
+	header, footer {
+	  padding: 1em;
+	}
+	
+	header {
+	  padding-left: 14.3vw;
+	}
+	
+	footer {
+	  border-radius: 0 0 10px 10px;	
+	}
+}
+
+/* ----------- Large screens ----------- */
+@media only screen  and (min-width : 1600px) {
+	.grid {
+		grid-template-columns: repeat(9, 1fr);
+		grid-template-areas:
+			"hd hd hd hd hd hd hd hd hd"
+			". . sA sA sA sA sA . ."
+			". . mn mn mn as as . ."
+			". . mn mn mn . . . ."
+			". . ft ft ft . . . .";
+	}
+	
+	header, footer {
+	  padding: 1em;
+	}
+	
+	header {
+	  padding-left: 22.22vw;
+	}
+	
+	footer {
+	  border-radius: 0 0 15px 15px;	
+	}
+}
+

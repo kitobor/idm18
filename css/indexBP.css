@@ -1,0 +1,191 @@
+/* ----------- BREAKPOINTS ----------- */
+.grid {
+	margin:0;
+	display: grid;
+	grid-template-rows: auto;
+	grid-gap: .5em;
+}
+
+/* ----------- Phone Portrait ----------- */
+@media screen and (max-width:400px) {    
+	.grid {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			"hd hd hd"
+			"as as as"
+			"sA sA sA"
+			"fe fe fe"
+			"sf sf sf"
+			"sB sB sB"
+			"ia ib ic"
+			"id ie if"
+			"ft ft ft";
+	}
+	
+	header, footer {
+	  padding:1em;
+	  box-shadow: 0;
+	  border-radius: 0px;
+	}
+	
+	h1 {
+	  font-size: 1em;
+	}
+	
+	button {
+		display: none;
+	}
+}
+
+/* ----------- Phone Landscape ----------- */
+@media screen and (min-width:401px) {    
+	.grid {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			"hd hd hd"
+			"as as as"
+			"sA sA sA"
+			"fe fe fe"
+			"sf sf sf"
+			"sB sB sB"
+			"ia ib ic"
+			"id ie if"
+			"ft ft ft";
+	}
+		
+	header, footer {
+	  border-radius: 0px;
+	  padding:1em;
+	}
+	
+	h1 {
+	  font-size: 1.5em;
+	}
+	
+	button {
+		display: none;
+	}
+}
+
+/* ----------- Tablet Portrait ----------- */
+@media screen and (min-width:600px) {    
+	.grid {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+			"hd hd hd"
+			"as as as"
+			"sA sA sA"
+			"fe fe fe"
+			"sf sf sf"
+			"sB sB sB"
+			"ia ib ic"
+			"id ie if"
+			"ft ft ft";
+	}
+		
+	header, footer {
+	  border-radius: 0px;
+	  padding:1em;
+	}
+	
+	h1 {
+	  font-size: 2em;
+	}
+	
+	button {
+		display: none;
+	}
+}
+
+/* ----------- Tablet Landscape ----------- */
+@media screen and (min-width:900px) {	  
+	.grid {
+		grid-template-columns: repeat(7, 1fr);
+		grid-template-areas:
+			"hd hd hd hd hd hd hd"
+			". as as as as as ."
+			". sA sA sA sA sA ."
+			". fe fe fe sf sf ."
+			". sB sB sB sB sB ."
+			". ia ib ic id ie ."
+			". ft ft ft ft ft .";
+	}
+	
+	header, footer {
+	  padding: 1em;
+	}
+	
+	header {
+	  padding-left: 14.3vw;
+	}
+	
+	footer {
+	  border-radius: 0 0 10px 10px;	
+	}
+	
+	button {
+		display: inline;
+	}
+}
+
+/* ----------- Desktops and laptops ----------- */
+@media only screen  and (min-width : 1200px) {
+	.grid {
+		grid-template-columns: repeat(7, 1fr);
+		grid-template-areas:
+			"hd hd hd hd hd hd hd"
+			". as as as as as ."
+			". sA sA sA sA sA ."
+			". fe fe fe sf sf ."
+			". sB sB sB sB sB ."
+			". ia ib ic id ie ."
+			". ft ft ft ft ft .";
+	}
+	
+	header, footer {
+	  padding: 1em;
+	}
+	
+	header {
+	  padding-left: 14.3vw;
+	}
+	
+	footer {
+	  border-radius: 0 0 10px 10px;	
+	}
+	
+	button {
+		display: inline;
+	}
+}
+
+/* ----------- Large screens ----------- */
+@media only screen  and (min-width : 1600px) {
+	.grid {
+		grid-template-columns: repeat(9, 1fr);
+		grid-template-areas:
+			"hd hd hd hd hd hd hd hd hd"
+			". . as as as as as . ."
+			". . sA sA sA sA sA . ."
+			". . fe fe fe sf sf . ."
+			". . sB sB sB sB sB . ."
+			". . ia ib ic id ie . ."
+			". . ft ft ft ft ft . .";
+	}
+	
+	header, footer {
+	  padding: 1em;
+	}
+	
+	header {
+	  padding-left: 22.22vw;
+	}
+	
+	footer {
+	  border-radius: 0 0 15px 15px;	
+	}
+	
+	button {
+		display: inline;
+	}
+}

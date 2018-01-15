@@ -1,0 +1,203 @@
+
+.arrow {
+	padding: 0;
+}
+
+.topbox {
+	padding: .8em .8em 0 .8em;
+}
+
+.bottombox {
+	padding: .8em .8em .5em .8em;
+}
+
+header {
+	margin-top: 10vh;
+	background-color: #CC3333;
+	grid-area: hd;
+}
+
+header img {
+	float:left;
+}
+
+#logo {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	height: 5em;
+	width: 5em;
+	padding: .3em 1em .3em .5em;
+}
+
+nav a {
+	color: #DDD;
+	padding: 0 .4em 0 .1em;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #222;
+	transition: color .5s;
+}
+
+.title {
+	font-size: 1.5em;
+	position: relative; 
+}
+
+#intro p {
+	margin:0;
+	padding: 1em 1em .8em 1em;
+}
+
+aside {
+	position: sticky;
+	color: #444;
+	background-color: #EEE;
+	text-align: left;
+	grid-area: as;
+}
+
+aside img {
+	margin: .5em 0;
+	max-width: 100%;
+}
+
+article {
+	padding: 0 .5em 1em .5em;
+}
+	
+.feature {
+	color: #DDD;
+	background-color: #444;
+	grid-area: fe;
+}
+
+.feature img {
+	max-width:100%;
+}
+
+.small_feature {
+	color: #222;
+	background-color: #A1A1A1;
+	grid-area: sf;
+}
+
+.small_feature .title {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small_feature #mainimage {
+	padding: 5%;
+	max-width: 90%;
+}
+
+.item {
+	position: relative;
+	color: #888;
+	background-color: #181818;
+		border-width: 1em 1em 3em 1em;
+	border-color: #FFF;
+}
+
+.item img {
+	max-width:100%;
+}
+
+#aa {
+	grid-area: ia;
+}
+
+#bb {
+	grid-area: ib;
+}
+
+#cc {
+	grid-area: ic;
+}
+
+#dd {
+	grid-area: id;
+}
+
+#ee {
+	grid-area: ie;
+}
+
+ul {
+	font-size: .85em; 
+	color: #999; 
+	padding: 0; 
+	margin: 0; 
+	list-style-type: none;
+	padding-bottom: 1em;
+}
+
+li {
+	padding: .3em 0;
+}
+
+.quote_italic {
+	padding: .5em 3vw;
+	font-style: italic;
+}
+
+footer, .subheader {
+	background-color: #CC3333;
+	color: #DDD;
+}
+
+main {
+	color: #888;
+	background-color: #EFEFEF;
+	grid-area: mn;
+}
+
+main h2, article h2 {
+	color: #444;
+}
+
+main p {
+	line-height: 1.15em;
+	margin-bottom: .5em;
+}
+
+.in_text_link {
+	text-decoration: none;
+	color: #CC3333;
+	cursor: url(hand.cur), pointer;
+}
+
+.in_text_link:hover {
+	color: #222;
+}
+
+#subA {
+	grid-area: sA;
+}
+
+#subB {
+	grid-area: sB;
+}
+
+footer {
+	border-radius: 0 0 .5em .5em;
+	margin-bottom: 5vh;
+	grid-area: ft;
+}
+
+#fadein {
+  animation: colors 3s forwards;
+}
+
+@keyframes colors {
+  0% {
+	color: #CC3333;
+  }
+  100% {
+	color: #181818;
+  }
+}
